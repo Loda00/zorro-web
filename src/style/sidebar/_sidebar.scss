@@ -1,0 +1,20 @@
+.my-logo {
+  
+}
+
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  transform: translateX(0px);
+  transition: .5s;
+  // float: left;
+}
+
+.sidebar-fondo {
+  background-color: #064475;
+  width: 100%;
+  height: 50vh;
+  position: relative;
+}
+
+@import "nav/nav";

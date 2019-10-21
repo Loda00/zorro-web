@@ -1,0 +1,21 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.main-container {
+  // display: flex;
+  // display: grid;
+  // grid-template-columns: 250px 1fr;
+  // grid-template-rows: 100vh;
+  width: 100%;
+  height: 100vh;
+}
+
+
+
+@import "login/login";
+@import "sidebar/sidebar";
+@import "footer/footer";
+@import "body/body";
