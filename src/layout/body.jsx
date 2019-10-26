@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react'
 import { connect } from 'react-redux'
-import { Icon } from 'semantic-ui-react'
+import { Icon, Input } from 'semantic-ui-react'
 import { stateSidebar } from 'actions/sidebar'
 
 import Footer from './footer'
@@ -16,19 +16,26 @@ class Body extends Component {
     return (
       <Fragment>
         <div className="body">
-          {/* <div>sadsadsadsad</div> */}
           <div className="head-body">
             <div className="head-body-left">
-              <Icon size="small" name="home" />
+              <Input
+                loading
+                icon="user"
+                placeholder="Search..."
+                className="input-search"
+              />
             </div>
             <div className="head-body-right">
-              <Icon size="small" name="home" />
-              <Icon size="small" name="home" />
-              <Icon size="small" name="home" />
-              <Icon size="small" name="home" />
+              <Icon name="home head-items" />&nbsp;
+              <Icon name="comment alternate outline head-items" />&nbsp;
+              <Icon name="bell outline head-items" />&nbsp;
+              <Icon name="settings head-items" />&nbsp;
+              <Icon name="question head-items" />&nbsp;
             </div>
           </div>
-          {children}
+          <div className="body-content">
+            {children}
+          </div>
         </div>
         <Footer />
       </Fragment>

@@ -1,6 +1,7 @@
 .sidebar-logo {
   width: $sidebar-width;
   height: 64px;
+  background-color: $main-color;
 }
 
 .sidebar {
@@ -8,7 +9,7 @@
   width: $sidebar-width;
   height: 100vh;
   background-color: $main-color;
-  transition: .5s;
+  transition:  .5s;
 }
 
 .open-close:checked ~ .sidebar {

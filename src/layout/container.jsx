@@ -14,7 +14,7 @@ class Container extends Component {
       <div className="main-container">
         <input type="checkbox" className="open-close" id="open-close" />
         <label className="open-close-label" htmlFor="open-close">
-          <Icon size="large" name="content" />
+          <Icon size="large" name="sidebar" />
         </label>
         <Sidebar />
         <Body>{children}</Body>

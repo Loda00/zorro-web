@@ -1,10 +1,17 @@
 .body {
-  height: 669px;
+  height: 100vh;
   width: 100%;
-  background-color: green;
+  background-color: $main-color;
   transition: .5s;
   margin-left: $sidebar-width;
   right: $sidebar-width;
+}
+
+.body-content {
+  height: calc(100vh - 106px);
+  overflow: scroll;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 .open-close {
@@ -15,8 +22,8 @@
   position: absolute;
   transition: .5s;
   z-index: 999;
-  top: 10px;
-  left: $sidebar-width + 10px;
+  top: 20px;
+  left: $sidebar-width + 20px;
   cursor: pointer;
 }
 
@@ -27,16 +34,39 @@
 }
 
 .open-close:checked ~ .open-close-label {
-  left: 10px;
-  top: 10px;
+  left: 20px;
+  top: 20px;
+}
+
+.open-close-label i.icon.sidebar:before {
+  color: white !important;
 }
 
 .head-body {
   display: flex;
   justify-content: space-between;
   padding: 10px 15px;
+  height: 56px;
 }
 
 .head-body-left {
-  padding-left: 60px;
+  padding-left: 50px;
+}
+
+.input-search > input {
+  background-color: $main-color !important;
+  color: white !important;
+  border: none !important;
+  outline: none !important;
+}
+
+.head-items {
+  cursor: pointer;
+  color: #d3d3d3 !important;
+  transition: .3s;
+  font-size: 20px !important;
+}
+
+.head-items:hover {
+  color: white !important;
 }

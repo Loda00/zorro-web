@@ -11,7 +11,9 @@
 $sidebar-width: 230px;
 $main-color: #064475;
 
+@import "~antd/dist/antd.css";
 @import "login/login";
 @import "sidebar/sidebar";
 @import "footer/footer";
 @import "body/body";
+@import "utils/utils";

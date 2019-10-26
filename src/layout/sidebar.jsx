@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react'
-import { Image } from 'semantic-ui-react'
-
+import { Image, Icon } from 'semantic-ui-react'
+import { Collapse } from 'antd'
 import Logo from 'image/logo.png'
 import PhotoUser from 'image/perfil.png'
 
@@ -8,6 +8,10 @@ class Sidebar extends Component {
   componentDidMount() {
     console.log('Sibebar')
   }
+
+  panelAcorden = (item, title) => (
+    <label className="title-acordeon"><Icon name={item} /> {title}</label>
+  )
 
   render() {
     return (
@@ -38,11 +42,55 @@ class Sidebar extends Component {
                     }}
                   />
                 </span>
-                <div>XXX</div>
-                <div>XXX</div>
+                <div>Fullstack Developer</div>
+                <div>Jhon Neira</div>
               </div>
-              <div className="sidebar-">
-                a
+              <span>
+                Principal
+              </span>
+              <div className="sidebar-routes">
+                <div className="sidebar-acordeon">
+                  <Collapse accordion expandIconPosition="right">
+                    <Collapse.Panel header={this.panelAcorden('plus', 'Nuevo')} key="1">
+                      <p>1</p>
+                      <p>2</p>
+                      <p>3</p>
+                    </Collapse.Panel>
+                    <Collapse.Panel header={this.panelAcorden('edit', 'Editar')} key="2">
+                      <p>1</p>
+                      <p>2</p>
+                      <p>3</p>
+                      <p>1</p>
+                      <p>2</p>
+                      <p>3</p>
+                    </Collapse.Panel>
+                    <Collapse.Panel header={this.panelAcorden('search', 'Buscar HDB')} key="3">
+                      <p>1</p>
+                      <p>2</p>
+                      <p>3</p>
+                    </Collapse.Panel>
+                    <Collapse.Panel header={this.panelAcorden('home', 'PC 15 de la UU')} key="4">
+                      <p>1</p>
+                      <p>2</p>
+                      <p>3</p>
+                    </Collapse.Panel>
+                    <Collapse.Panel header={this.panelAcorden('home', 'Importar HDB ')} key="5">
+                      <p>1</p>
+                      <p>2</p>
+                      <p>3</p>
+                    </Collapse.Panel>
+                    <Collapse.Panel header={this.panelAcorden('home', 'Exportar')} key="6">
+                      <p>1</p>
+                      <p>2</p>
+                      <p>3</p>
+                    </Collapse.Panel>
+                    <Collapse.Panel header={this.panelAcorden('home', 'Ocurrencia')} key="7">
+                      <p>1</p>
+                      <p>2</p>
+                      <p>3</p>
+                    </Collapse.Panel>
+                  </Collapse>
+                </div>
               </div>
             </div>
           </div>
