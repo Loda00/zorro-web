@@ -1,7 +1,8 @@
 import * as Toast from './toast'
-import Container from './container'
+
+const x = 12
 
 export {
   Toast,
-  Container,
+  x,
 }

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Switch, Route, Redirect } from 'react-router-dom'
 import { ToastContainer } from 'react-toastify'
-import { Container } from 'components'
+import { Container } from 'layout'
 
 import Home from './Home'
 import NotFound from './404'

@@ -1,8 +1,42 @@
 .body {
-  // width: 100%;
-  display: inline-block;
-  width: 500px;
-  height: 100vh;
-  background-color: gray;
-  // float: left;
+  height: 669px;
+  width: 100%;
+  background-color: green;
+  transition: .5s;
+  margin-left: $sidebar-width;
+  right: $sidebar-width;
+}
+
+.open-close {
+  display: none;
+}
+
+.open-close-label {
+  position: absolute;
+  transition: .5s;
+  z-index: 999;
+  top: 10px;
+  left: $sidebar-width + 10px;
+  cursor: pointer;
+}
+
+
+.open-close:checked ~ .body {
+  margin-left: 0px;
+  right: 0px;
+}
+
+.open-close:checked ~ .open-close-label {
+  left: 10px;
+  top: 10px;
+}
+
+.head-body {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+}
+
+.head-body-left {
+  padding-left: 60px;
 }

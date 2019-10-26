@@ -1,5 +1,19 @@
-.nav {
-  width: 250px;
-  height: calc(100vh - 80px);
-  background-color: yellow;
+.sidebar-content {
+  width: $sidebar-width;
+  height: calc(100vh - 64px);
+  background-color: white;
+}
+
+.sidebar-user {
+  display: flex;
+  width: $sidebar-width;
+  height: 150px;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.photo-user {
+  width: 90px;
 }

@@ -1,5 +1,21 @@
 .footer {
-  width: 100%;
+  position: fixed;
+  width: calc(100% - 230px);
   height: 50px;
-  background-color: green;
+  right: 0px;
+  bottom: 0px;
+  line-height: 50px;
+  // background-color: lightblue;
+  transition: .5s;
+  padding: 0px 15px;
+}
+
+.footer-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.open-close:checked ~ .footer {
+  width: 100%;
 }
