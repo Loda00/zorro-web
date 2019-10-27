@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Card } from 'semantic-ui-react'
+import { Card, Header } from 'semantic-ui-react'
 
 class Home extends Component {
   componentDidMount() {
@@ -9,6 +9,7 @@ class Home extends Component {
   render() {
     return (
       <div className="content-view">
+        <Header className="content-title" as="h2">Nuevo HDB</Header>
         <Card>
           <Card.Content>
             <h1>Home</h1>
