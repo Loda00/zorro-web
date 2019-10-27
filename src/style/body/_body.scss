@@ -70,3 +70,27 @@
 .head-items:hover {
   color: white !important;
 }
+
+@media screen and (max-width : 800px){
+  .head-body-left{
+    display: none;
+  }
+  .head-body {
+    justify-content: flex-end;
+    padding-right: 0px;
+  }
+  .main-content {
+    overflow-x: scroll;
+  }
+  .head-body-right > i:nth-child(2n - 1) {
+    display: none;
+  }
+  .body {
+    margin-left: $sidebar-width-responsive;
+  }
+  .open-close-label {
+    left: $sidebar-width-responsive + 20px;
+    top: 20px;
+  }
+}
+

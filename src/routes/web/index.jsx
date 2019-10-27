@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react'
 import { Switch, Route, Redirect } from 'react-router-dom'
 import { ToastContainer } from 'react-toastify'
 import { Container } from 'layout'
@@ -13,7 +13,7 @@ class Web extends Component {
 
   render() {
     return (
-      <div>
+      <Fragment>
         <Container>
           <Switch>
             <Route
@@ -39,7 +39,7 @@ class Web extends Component {
           toastClassName="custom-toast-container"
           bodyClassName="custom-toast-body"
         />
-      </div>
+      </Fragment>
     )
   }
 }

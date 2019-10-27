@@ -1,3 +1,7 @@
+$sidebar-width: 230px;
+$sidebar-width-responsive: 190px;
+$main-color: #064475;
+
 * {
   margin: 0px;
   padding: 0px;
@@ -6,10 +10,20 @@
 
 .main-container {
   display: flex;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: scroll;
+  overflow-x: hidden;
 }
 
-$sidebar-width: 230px;
-$main-color: #064475;
+.main-container::-webkit-scrollbar {
+  width: 1px;     /* Tamaño del scroll en vertical */
+  //height: 8px;    /* Tamaño del scroll en horizontal */
+  //display: none;  /* Ocultar scroll */
+  background-color: $main-color;
+
+}
 
 @import "~antd/dist/antd.css";
 @import "login/login";

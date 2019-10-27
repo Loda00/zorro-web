@@ -2,7 +2,6 @@
   width: $sidebar-width;
   height: calc(100vh - 70px);
   background-color: white;
-
   border-radius: 1px;
 }
 
@@ -22,7 +21,7 @@
 
 .sidebar-routes {
   width: 100%;
-  height: calc(100vh - 220px);
+  height: calc(100vh - 241px);
   overflow: scroll;
   overflow-x: hidden;
   overflow-y: hidden;
@@ -58,5 +57,24 @@
     .ant-collapse-content-box {
       padding-left: 25px;
     }
+  }
+}
+
+@media screen and (max-width : 800px){
+  .sidebar {
+    width: $sidebar-width-responsive;
+  }
+  .sidebar-user {
+    width: $sidebar-width-responsive;
+  }
+  .sidebar-content {
+    width: $sidebar-width-responsive;
+    height: calc(100vh - 60px);
+  }
+  .open-close:checked ~ .sidebar {
+    transform: translateX(-$sidebar-width-responsive);
+  }
+  .ant-collapse > .ant-collapse-item > .ant-collapse-header {
+    width: 180px !important;
   }
 }
