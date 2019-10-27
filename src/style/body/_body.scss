@@ -71,6 +71,14 @@
   color: white !important;
 }
 
+.header-items-show {
+  right: 15px !important;
+  position: fixed !important;
+  width: 200px !important;
+  top: 35px !important;
+  z-index: 1000 !important;
+}
+
 @media screen and (max-width : 800px){
   .head-body-left{
     display: none;
@@ -82,7 +90,7 @@
   .main-content {
     overflow-x: scroll;
   }
-  .head-body-right > i:nth-child(2n - 1) {
+  .head-body-right > span:nth-child(2n - 1) {
     display: none;
   }
   .body {
