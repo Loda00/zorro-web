@@ -1,7 +1,7 @@
 .body {
   height: 100vh;
   width: 100%;
-  background-color: $main-color;
+  background: linear-gradient(to top, #fdffff 55%,$main-color 55%,$main-color 55%,$main-color 55%,#fdffff 55%,$main-color 55%,$main-color 55%,#bee4f8 55%,#bee4f8 55%,$main-color 55%,$main-color 55%,$main-color 55%,$main-color 55%,$main-color 55%,#e1ffff 55%,$main-color 55%);
   transition: .5s;
   margin-left: $sidebar-width;
   right: $sidebar-width;
@@ -77,6 +77,28 @@
   width: 200px !important;
   top: 35px !important;
   z-index: 1000 !important;
+}
+
+.ui.segment.fade.down.header-items-show.visible.transition{
+  padding: 1rem 0px !important;
+}
+
+.ui.segment.fade.down.header-items-show.visible.transition .efect-options {
+  padding: 0px 10px;
+  margin: 9px 0px;
+}
+
+.ui.segment.fade.down.header-items-show.visible.transition .ui.header {
+  margin: 0px 20px 20px !important;
+}
+
+.efect-options {
+  cursor: pointer;
+  padding: 0px 10px;
+}
+
+.efect-options:hover {
+  background-color: #eaeaea;
 }
 
 @media screen and (max-width : 800px){

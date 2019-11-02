@@ -4,6 +4,7 @@ import { ToastContainer } from 'react-toastify'
 import { Container } from 'layout'
 
 import Home from './Home'
+import Nuevo from './Nuevo'
 import NotFound from './404'
 
 class Web extends Component {
@@ -28,7 +29,7 @@ class Web extends Component {
               )}
             />
             <Route path="/index" component={Home} />
-            {/* <Route path="/HDB" component={HDB} /> */}
+            <Route path="/nuevo/nuevo-hdb" component={Nuevo} />
             <Route component={NotFound} />
           </Switch>
         </Container>

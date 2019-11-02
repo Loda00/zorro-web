@@ -27,6 +27,7 @@ class Body extends Component {
   }
 
   handleClickClose = (name) => {
+    console.log('xxx')
     this.setState({
       [name]: false,
     })
@@ -60,7 +61,11 @@ class Body extends Component {
                 >
                   <Segment className="header-items-show">
                     <Header>This is a controlled portal</Header>
-                    <p>1</p>
+                    <div className="efect-options">Item Option</div>
+                    <div className="efect-options">Item Option</div>
+                    <div className="efect-options">Item Option</div>
+                    <div className="efect-options">Item Option</div>
+                    <div className="efect-options">Item Option</div>
                   </Segment>
                 </TransitionablePortal>
               </span>
@@ -76,7 +81,8 @@ class Body extends Component {
                 >
                   <Segment className="header-items-show">
                     <Header>This is a controlled portal</Header>
-                    <p>2</p>
+                    <div className="efect-options">Item Option</div>
+                    <div className="efect-options">Item Option</div>
                   </Segment>
                 </TransitionablePortal>
               </span>
@@ -92,7 +98,10 @@ class Body extends Component {
                 >
                   <Segment className="header-items-show">
                     <Header>This is a controlled portal</Header>
-                    <p>3</p>
+                    <div className="efect-options">Item Option</div>
+                    <div className="efect-options">Item Option</div>
+                    <div className="efect-options">Item Option</div>
+                    <div className="efect-options">Item Option</div>
                   </Segment>
                 </TransitionablePortal>
               </span>
@@ -108,7 +117,9 @@ class Body extends Component {
                 >
                   <Segment className="header-items-show">
                     <Header>This is a controlled portal</Header>
-                    <p>4</p>
+                    <div className="efect-options">Item Option</div>
+                    <div className="efect-options">Item Option</div>
+                    <div className="efect-options">Item Option</div>
                   </Segment>
                 </TransitionablePortal>
               </span>
@@ -124,7 +135,10 @@ class Body extends Component {
                 >
                   <Segment className="header-items-show">
                     <Header>This is a controlled portal</Header>
-                    <p>5</p>
+                    <div className="efect-options">Item Option</div>
+                    <div className="efect-options">Item Option</div>
+                    <div className="efect-options">Item Option</div>
+                    <div className="efect-options">Item Option</div>
                   </Segment>
                 </TransitionablePortal>
               </span>

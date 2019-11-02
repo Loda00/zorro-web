@@ -1,5 +1,5 @@
 .content-view {
-  padding: 30px 10% 10px;
+  padding: 30px 8% 8px;
 }
 
 .content-view .ui.card {
@@ -9,4 +9,13 @@
 .content-title {
   color: white !important;
   padding-bottom: 15px !important;
+}
+
+.card-content-custom > .content {
+  min-height: 70vh;
+}
+
+.content-404 {
+  padding: 0px 30px;
+  height: 80vh;
 }

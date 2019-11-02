@@ -16,4 +16,15 @@
   transform: translateX(-$sidebar-width);
 }
 
+.sidebar-sub-menu-item {
+  display: block;
+  padding: 4px 0px 4px 9px;
+  color: gray;
+}
+
+.sidebar-sub-menu-item:hover {
+  background-color: #eaeaea;
+  color: gray;
+}
+
 @import "nav/nav";
