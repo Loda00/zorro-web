@@ -5,7 +5,7 @@ import Body from './body'
 
 class Container extends Component {
   componentDidMount() {
-    console.log('Container')
+
   }
 
   render() {

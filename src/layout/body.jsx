@@ -15,7 +15,7 @@ class Body extends Component {
   }
 
   componentDidMount() {
-    console.log('Body1')
+
   }
 
   handleClickShow = (name) => {
@@ -27,7 +27,6 @@ class Body extends Component {
   }
 
   handleClickClose = (name) => {
-    console.log('xxx')
     this.setState({
       [name]: false,
     })
@@ -50,7 +49,7 @@ class Body extends Component {
             </div>
             <div className="head-body-right">
               <span onClick={() => this.handleClickShow('item1')}>
-                <Icon name="home head-items" />&nbsp;
+                <Icon name="home" className="head-items" />&nbsp;
                 <TransitionablePortal
                   onClose={() => this.handleClickClose('item1')}
                   transition={{
@@ -70,7 +69,7 @@ class Body extends Component {
                 </TransitionablePortal>
               </span>
               <span onClick={() => this.handleClickShow('item2')}>
-                <Icon name="comment alternate outline head-items" />&nbsp;
+                <Icon name="comment alternate outline" className="head-items" />&nbsp;
                 <TransitionablePortal
                   onClose={() => this.handleClickClose('item2')}
                   transition={{
@@ -87,7 +86,7 @@ class Body extends Component {
                 </TransitionablePortal>
               </span>
               <span onClick={() => this.handleClickShow('item3')}>
-                <Icon name="bell outline head-items" />&nbsp;
+                <Icon name="bell outline" className="head-items" />&nbsp;
                 <TransitionablePortal
                   onClose={() => this.handleClickClose('item3')}
                   transition={{
@@ -106,7 +105,7 @@ class Body extends Component {
                 </TransitionablePortal>
               </span>
               <span onClick={() => this.handleClickShow('item4')}>
-                <Icon name="settings head-items" />&nbsp;
+                <Icon name="settings" className="head-items" />&nbsp;
                 <TransitionablePortal
                   onClose={() => this.handleClickClose('item4')}
                   transition={{
@@ -124,7 +123,7 @@ class Body extends Component {
                 </TransitionablePortal>
               </span>
               <span onClick={() => this.handleClickShow('item5')}>
-                <Icon name="question head-items" />&nbsp;
+                <Icon name="question" className="head-items" />&nbsp;
                 <TransitionablePortal
                   onClose={() => this.handleClickClose('item5')}
                   transition={{

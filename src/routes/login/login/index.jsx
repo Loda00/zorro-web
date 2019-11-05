@@ -15,7 +15,7 @@ class Login extends Component {
   }
 
   componentDidMount() {
-    console.log('Login')
+
   }
 
   handleChange = (e) => {
@@ -56,16 +56,16 @@ class Login extends Component {
       return
     }
 
-    const obj = {
-      user,
-      password,
-    }
+    // const obj = {
+    //   user,
+    //   password,
+    // }
 
     history.push('/index')
     // if (obj) {
     //   Toast.success('Contraseña o usuario incorrecto')
     // }
-    console.log('Ingreso  => ', obj)
+    // console.log('Ingreso  => ', obj)
   }
 
   render() {
