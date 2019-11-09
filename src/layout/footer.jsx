@@ -5,7 +5,7 @@ import Logo from 'image/logoFooter.png'
 
 class Footer extends Component {
   componentDidMount() {
-    console.log('Footer')
+
   }
 
   render() {

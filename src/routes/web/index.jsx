@@ -9,7 +9,7 @@ import NotFound from './404'
 
 class Web extends Component {
   componentDidMount() {
-    console.log('wevbbbb')
+
   }
 
   render() {

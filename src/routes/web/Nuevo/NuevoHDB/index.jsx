@@ -3,7 +3,7 @@ import { Card, Header } from 'semantic-ui-react'
 
 class NuevoHDB extends Component {
   componentDidMount() {
-    console.log('idnex')
+
   }
 
   render() {

@@ -8,7 +8,7 @@ import PhotoUser from 'image/perfil.png'
 
 class Sidebar extends Component {
   componentDidMount() {
-    console.log('Sibebar')
+
   }
 
   panelAcorden = (item, title) => (

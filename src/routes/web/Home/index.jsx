@@ -4,7 +4,7 @@ import axios from 'axios'
 
 class Home extends Component {
   componentDidMount() {
-    console.log('idnex')
+
   }
 
   handleS3 = (e) => {
